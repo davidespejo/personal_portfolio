@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+
+// --------------------------
+// ------- NEO FONTS --------
+// -------------------------- */
+
+/* COPY ALL THIS CODE IN THE TINYMCE STYLES.CSS IN THE BACK */
+html {
+    font-size: 10px;
+
+    @media screen and (max-width: 700px) {
+        font-size: 9px;
+    }
+
+    @media screen and (max-width: 520px) {
+        font-size: 8px;
+    }
+}
+
+:root {
+    /* DISPLAY l FONT FAMILY, FONT SIZE, FONT WEIGHT AND LINE HEIGHT */
+    --display-l-ff: 'Montserrat';
+    --display-l-fs: 7.2rem;
+    --display-l-fw: 300;
+    --display-l-lh: 8rem;
+
+    @media screen and (max-width: 900px) {
+        --display-l-fs: 5.9rem;
+        --display-l-lh: 6.2rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        --display-l-fs: 4.8rem;
+        --display-l-lh: 6rem;
+    }
+
+    /* DISPLAY M FONT FAMILY, FONT SIZE, FONT WEIGHT AND LINE HEIGHT */
+    --display-m-ff: 'Montserrat';
+    --display-m-fs: 5.2rem;
+    --display-m-fw: 300;
+    --display-m-lh: 6.5rem;
+
+    @media screen and (max-width: 550px) {
+        --display-m-fs: 4.6rem;
+        --display-m-lh: 5.3rem;
+    }
+
+    /* DISPLAY S FONT FAMILY, FONT SIZE, FONT WEIGHT AND LINE HEIGHT */
+    --display-s-ff: 'Montserrat';
+    --display-s-fs: 3.8rem;
+    --display-s-fw: 300;
+    --display-s-lh: 4.5rem;
+
+    @media screen and (max-width: 550px) {
+        --display-s-fs: 3.2rem;
+        --display-s-lh: 4rem;
+    }
+
+    /* HEADLINE FONT FAMILY, FONT SIZE, FONT WEIGHT AND LINE HEIGHT */
+    --headline-ff: 'Montserrat';
+    --headline-fs: 3rem;
+    --headline-fw: 300;
+    --headline-lh: 3.9rem;
+
+    /* TITLE FONT FAMILY, FONT SIZE, FONT WEIGHT AND LINE HEIGHT */
+    --title-ff: 'Montserrat';
+    --title-fs: 2.5rem;
+    --title-fw: 300;
+    --title-lh: 3.5rem;
+
+    /* SUBTITLE FONT FAMILY, FONT SIZE, FONT WEIGHT AND LINE HEIGHT */
+    --subtitle-ff: 'Montserrat';
+    --subtitle-fs: 2rem;
+    --subtitle-fw: 400;
+    --subtitle-lh: 3.3rem;
+
+    /* BODY FONT FAMILY, FONT SIZE, FONT WEIGHT AND LINE HEIGHT */
+    --body-ff: 'Montserrat';
+    --body-fs: 1.5rem;
+    --body-fw: 400;
+    --body-lh: 2.8rem;
+
+    /* CAPTION FONT FAMILY, FONT SIZE, FONT WEIGHT AND LINE HEIGHT */
+    --caption-ff: 'Montserrat';
+    --caption-fs: 1.4rem;
+    --caption-fw: 300;
+    --caption-lh: 2.7rem;
+
+    /* SMALL FONT FAMILY, FONT SIZE, FONT WEIGHT AND LINE HEIGHT */
+    --small-ff: 'Montserrat';
+    --small-fs: 1.1rem;
+    --small-fw: 300;
+    --small-lh: 1.4rem;
+}
+
+.display-l {
+    font-family: var(--display-l-ff);
+    font-size: var(--display-l-fs);
+    font-weight: var(--display-l-fw);
+    line-height: var(--display-l-lh);
+    letter-spacing: 1.6px;
+
+    strong,
+    b,
+    &.display-l--bold {
+        font-weight: 600;
+    }
+}
+
+.display-l--italic,
+.display-l em {
+    font-family: var(--display-l-ff);
+    font-size: var(--display-l-fs);
+    font-weight: var(--display-l-fw);
+    line-height: var(--display-l-lh);
+    font-style: italic;
+}
+
+.display-m {
+    font-family: var(--display-m-ff);
+    font-size: var(--display-m-fs);
+    font-weight: var(--display-m-fw);
+    line-height: var(--display-m-lh);
+    letter-spacing: 0.3px;
+
+    strong,
+    b,
+    &.display-m--bold {
+        font-weight: 500;
+    }
+}
+
+.display-m--italic,
+.display-m em {
+    font-family: var(--display-m-ff);
+    font-size: var(--display-m-fs);
+    font-weight: var(--display-m-fw);
+    line-height: var(--display-m-lh);
+    font-style: italic;
+}
+
+.display-s {
+    font-family: var(--display-s-ff);
+    font-size: var(--display-s-fs);
+    font-weight: var(--display-s-fw);
+    line-height: var(--display-s-lh);
+
+    strong,
+    b,
+    &.display-s--bold {
+        font-weight: 600;
+    }
+}
+
+.display-s--italic,
+.display-s em {
+    font-family: var(--display-s-ff);
+    font-size: var(--display-s-fs);
+    font-weight: var(--display-s-fw);
+    line-height: var(--display-s-lh);
+    font-style: italic;
+}
+
+.headline-font {
+    font-family: var(--headline-ff);
+    font-size: var(--headline-fs);
+    font-weight: var(--headline-fw);
+    line-height: var(--headline-lh);
+
+    strong,
+    b,
+    &.headline-font--bold {
+        font-weight: 500;
+    }
+}
+
+.headline-font--italic,
+.headline-font em {
+    font-family: var(--headline-ff);
+    font-size: var(--headline-fs);
+    font-weight: var(--headline-fw);
+    line-height: var(--headline-lh);
+    font-style: italic;
+}
+
+.title-font {
+    font-family: var(--title-ff);
+    font-size: var(--title-fs);
+    font-weight: var(--title-fw);
+    line-height: var(--title-lh);
+
+    strong,
+    b,
+    &.title-font--bold {
+        font-weight: 500;
+    }
+}
+
+.title-font--italic,
+.title-font em {
+    font-family: var(--title-ff);
+    font-size: var(--title-fs);
+    font-weight: var(--title-fw);
+    line-height: var(--title-lh);
+    font-style: italic;
+}
+
+.subtitle-font {
+    font-family: var(--subtitle-ff);
+    font-size: var(--subtitle-fs);
+    font-weight: var(--subtitle-fw);
+    line-height: var(--subtitle-lh);
+
+    strong,
+    b,
+    &.subtitle-font--bold {
+        font-weight: 600;
+    }
+}
+
+.subtitle-font--italic,
+.subtitle-font em {
+    font-family: var(--subtitle-ff);
+    font-size: var(--subtitle-fs);
+    font-weight: var(--subtitle-fw);
+    line-height: var(--subtitle-lh);
+    font-style: italic;
+}
+
+.body-font,
+p {
+    font-family: var(--body-ff);
+    font-size: var(--body-fs);
+    font-style: normal;
+    font-weight: var(--body-fw);
+    line-height: var(--body-lh);
+
+    strong,
+    b,
+    &.body-font--bold {
+        font-weight: 500;
+    }
+}
+
+.body-font--italic,
+.body-font em {
+    font-family: var(--body-ff);
+    font-size: var(--body-fs);
+    font-style: italic;
+    font-weight: 300;
+    line-height: var(--body-lh);
+}
+
+.caption-font {
+    font-family: var(--caption-ff);
+    font-size: var(--caption-fs);
+    font-weight: var(--caption-fw);
+    line-height: var(--caption-lh);
+
+    strong,
+    b,
+    &.caption-font--bold {
+        font-weight: 500;
+    }
+}
+
+.caption-font--italic,
+.caption-font em {
+    font-family: var(--body-ff);
+    font-size: var(--caption-fs);
+    font-style: italic;
+    font-weight: 300;
+    line-height: var(--caption-lh);
+}
+
+.small-font {
+    font-family: var(--small-ff);
+    font-size: var(--small-fs);
+    font-weight: var(--small-fw);
+    line-height: var(--small-lh);
+    letter-spacing: 1px;
+
+    strong,
+    b,
+    &.small-font--bold {
+        font-weight: 600;
+    }
+}
+
+.small-font--italic,
+.small-font em {
+    font-family: var(--body-ff);
+    font-size: var(--small-fs);
+    font-style: italic;
+    font-weight: 300;
+    line-height: var(--small-lh);
+}
+
+.button-font {
+    @extend .small-font;
+
+    font-weight: 500;
+}
+
+strong,
+b {
+    font-weight: 500;
+}
+
+.font {
+    &--bold {
+        font-weight: 500;
+    }
+}
+
+body {
+    @extend .body-font;
+}
+
+/* -------------------------- */

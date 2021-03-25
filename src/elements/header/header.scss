@@ -1,0 +1,13 @@
+.header {
+    height: var(--header-height);
+    background-color: var(--grey-dark);
+    padding: var(--space-s) var(--space-m);
+    display: flex;
+    align-items: center;
+
+    &__logo {
+        display: flex;
+        color: var(--white);
+        text-decoration: none;
+    }
+}

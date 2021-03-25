@@ -1,0 +1,29 @@
+.button {
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 38px;
+    margin-top: 0px;
+    cursor: pointer;
+
+    transition: background-color 0.2s ease-out;
+
+    > span {
+        color: #777;
+        font-size: 14px;
+        font-weight: 400;
+        transition: color 0.2s ease-out;
+    }
+
+    &:hover {
+        background-color: var(--grey-dark);
+
+        > span {
+            color: #fff;
+        }
+    }
+}

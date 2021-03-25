@@ -1,0 +1,25 @@
+.triangles-container {
+    width: 100%;
+    height: 100%;
+
+    .triangles {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        &--bottom-left {
+            max-width: 1000px;
+            max-height: 800px;
+            left: 0;
+            bottom: 0;
+            clip-path: polygon(0 0, 0% 100%, 100% 100%);
+        }
+
+        &--top-right {
+            max-width: 1000px;
+            right: 0;
+            top: 0;
+            clip-path: polygon(100% 0, 24% 0, 100% 100%);
+        }
+    }
+}

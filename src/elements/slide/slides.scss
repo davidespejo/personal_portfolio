@@ -1,0 +1,24 @@
+.slides {
+    width: 100%;
+
+    .slide {
+        position: absolute;
+        top: 100%;
+        transition: transform 0.3s ease-out;
+
+        &.enter,
+        &.enter-done,
+        &.exit-active {
+            transform: translateY(-100%);
+        }
+
+        &.exit-done,
+        &.exit-active {
+            transition: transform 0.1s ease-out;
+            transform: none;
+        }
+        &.exit-done {
+            transition: none;
+        }
+    }
+}

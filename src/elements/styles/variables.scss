@@ -1,0 +1,15 @@
+:root {
+    // SPACE BASE DIMENSION
+    --space-m: 16px;
+
+    // SPACE MULTIPLIERS
+    --space-xxs: calc(var(--space-m) / 8);
+    --space-xs: calc(var(--space-m) / 4);
+    --space-s: calc(var(--space-m) / 2);
+    --space-l: calc(var(--space-m) * 2);
+    --space-xl: calc(var(--space-m) * 4);
+    --space-xxl: calc(var(--space-m) * 8);
+
+    // ELEMENTS
+    --header-height: 49px;
+}
